@@ -15,6 +15,8 @@ button, summary {
 :root {
 	--color-text:#111;
 	--color-background:#eee;
+	--color-text-white: #ffffff;
+	--ade-purple: #9872FF;
 }
 
 
@@ -25,7 +27,7 @@ button, summary {
 
 body {
 	font-family: "elza", sans-serif;
-  	color:var(--color-text);
+  	color: var(--color-text);
  	background-color:var(--color-background);
 	margin: 0;
 	padding: 0;
@@ -40,7 +42,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 3em 0 0 0;
+	margin: 3em 0 1em 0;
 }
 
 .header h1 {
@@ -60,6 +62,10 @@ body {
 	margin: 0;
 	font-size: 2em;
 	justify-content: center;
+}
+
+.header a {
+	text-decoration: none;
 }
 
 /******************/
@@ -239,5 +245,50 @@ body {
 
 	background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
 	background-size: 100%;
+}
 
+.ade {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	background-color:var(--ade-purple);
+	padding: 0 0 5em 0;
+}
+.ade h2 {
+	display: none;
+}
+
+.ade p {
+	font-size: 1.4em;
+	color: var(--color-text-white);
+}
+
+.ade img {
+	width: 58%;
+}
+
+.intro-text {
+	width: 50%;
+}
+
+video {
+	position: relative;
+	width: 25%;
+	
+}
+
+.video-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 3em;
+	margin: 5em 0 0 0;
+}
+
+.outro-text {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
 }
